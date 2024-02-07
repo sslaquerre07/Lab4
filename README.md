@@ -5,9 +5,12 @@
 * One technique uses flex containers
 ## Team Members
 |     Name     |
+|--------------|
 | Robert Meyer |
 | Sam Laquerre |
 ## Screenshots
-
+### Exercise B
 ![Exercise B](ExerciseB.gif)
+
+### Exercise C
 ![Exercise C](Exercisec.gif)
