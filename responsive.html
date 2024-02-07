@@ -17,7 +17,7 @@ Description : Responsive Layouts.
 	-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- First, link the menu.css file here -->
+	<link rel="stylesheet" href="menu.css">
 
 	<style>	
 		/* Remove borders at the end, they have been add just for detecting positions of items*/	
@@ -52,31 +52,61 @@ Description : Responsive Layouts.
 		}
 
 		.large, .medium, .small {
-			/*I need some CSS codes.*/
+			box-sizing: border-box;
 		}
 		
 		.gap {
-			/*I need some CSS codes.*/
+			clear:both;
 		}
 
 		@media screen and (min-width: 769px) {			
 			.large { 
-				/*I need some CSS codes.*/
+				width:100%;
 			}
 			.medium { 
-				/*I need some CSS codes.*/
+				float:left;
+				width:70%;
 			}
 			.small { 
-				/*I need some CSS codes.*/
+				float:right;
+				width:30%;
 			 }
 		}
 
         @media screen and (max-width: 768px) {
-            /*I need some CSS codes.*/
+            .menu{width:100%;}
+			.main{
+				margin-left:0;
+			}
+			.large { 
+				width:100%;
+			}
+			.medium { 
+				float:left;
+				width:60%;
+			}
+			.small { 
+				float:right;
+				width:40%;
+			 }
+			
         }
 
         @media screen and (max-width: 480px) {
-			/*I need some CSS codes.*/
+			.menu{width:100%;}
+			.main{margin-left:0;}
+			.large { 
+				width:100%;
+			}
+			.medium { 
+				float:left;
+				width:100%;
+			}
+			.small { 
+				float:right;
+				width:100%;
+			 }
+			 header:h1{font-size: 18px;}
         }
 
         
@@ -135,7 +165,7 @@ Description : Responsive Layouts.
 				<!-- Medium news item -->
 				<div class="medium news-item">
 					<header>
-						<h1>Mahdi Ansari Takes a Historic Spacewalk Near the ISS</h1>
+						<h1>Sam Laquerre Takes a Historic Spacewalk Near the ISS</h1>
 					</header>
 					<img src="images/medium.jpg" alt="Medium Image">
 					<article>
