@@ -69,19 +69,27 @@ Description : Flex Layouts.
         img { max-width: 100%; height: auto; }
         .container { 
 			/*I need some CSS codes.*/
+			display:flex;
+			flex-direction: column;
 		 }
         .header, .footer { background-color: #f2f2f2; text-align: center; padding: 10px; width: 100%;}
 		.body { 
 			/*I need some CSS codes.*/
+			display:flex;
+			flex-direction: row;
 		}
         .main { 
 			padding: 15px; 
+			display:flex;
+			flex-direction: column;
 			/*I need some CSS codes.*/
 		}
         
         .news-item { padding: 10px; }
         .row { 
 			/*I need some CSS codes.*/
+			display:flex;
+			flex-direction: row;
 		}
         
 
@@ -89,30 +97,61 @@ Description : Flex Layouts.
             .menu { width: 150px; }     
 			.large { 
 				/*I need some CSS codes.*/
+				width:100%;
+				flex-direction: row;
 			}
 			.medium { 
 				/*I need some CSS codes.*/
+				width:70%;
+				flex-direction: row;
 			}
 			.small { 
 				/*I need some CSS codes.*/
+				width:30%;
+				flex-direction: row;
 			 }       
         }
 
         @media screen and (max-width: 768px) {
 			.body { 
 				/*I need some CSS codes.*/
+				flex-direction: column;
 			}
             .menu ul { 
 				/*I need some CSS codes.*/
-			 }            
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: row;
+			 }        
+			 .large { 
+				/*I need some CSS codes.*/
+				width:100%;
+				flex-direction: row;
+			}
+			.medium { 
+				/*I need some CSS codes.*/
+				width:60%;
+				flex-direction: row;
+			}
+			.small { 
+				/*I need some CSS codes.*/
+				width:40%;
+				flex-direction: row;
+			 }           
             /*I need some CSS codes.*/
         }
 
         @media screen and (max-width: 480px) {
             .news-item header h1 { font-size: 18px; }
+			.row {
+				flex-direction: column;
+			}
             .medium, .small { 
 				/*I need some CSS codes.*/
+				width: 100%;
 			 }
+			 h1{font-size: 18px;}
+
         }
     </style>
 </head>
