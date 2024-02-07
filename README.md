@@ -13,4 +13,4 @@
 ![Exercise B](ExerciseB.gif)
 
 ### Exercise C
-![Exercise C](Exercisec.gif)
+![Exercise C](ExerciseC.gif)
